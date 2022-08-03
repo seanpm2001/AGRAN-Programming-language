@@ -1,0 +1,14 @@
+# Start of script
+Title: AGRAN revival plans
+# <(::)>
+Rename: "rename the language to GRANNY (original repository name will remain)"
+Language_type: Esotoric filter language
+Syntax: "keep the same"
+Implementation_Languages: 'FORTRAN', 'Python', 'Java', 'VBS'
+Repository: $Modernize
+# File info
+File_version: "1 (2022, Tuesday, August 2nd at 11:13 pm PST)"
+File_type: "YAML source file (*.yml *.yaml)"
+Line_count: Including_blank_lines_and_Compiler_line: 14
+# End of script
+
