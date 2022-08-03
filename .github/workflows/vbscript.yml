@@ -1,0 +1,34 @@
+name: VBScript CI (coming soon)
+
+# Not yet supported
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        compiler: [gcc]
+        version: [11, 10, 9, 8]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup VBScript
+        id: setup-vbscript
+        uses: ./
+        with:
+          compiler: # Coming soon
+          version: # Coming soon
+
+      - name: Check VBScript compiler
+        run: |
+          ${{ env.FC }} --version
+          ${{ env.CC }} --version
+        shell: bash
+        env:
+          FC: # Coming soon
+          CC: # Coming soon
